@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Projects</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(39, 77, 166); 
+            font-family: 'Times New Roman', Times, serif; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh;
+        }
+        .project-card {
+            background-color: #beb8a5; 
+            margin-bottom: 60px; 
+            height: 100%;
+        }
+        footer {
+            background-color: #000000; 
+            color: white; 
+            padding: 1rem 0; 
+            margin-top: auto;
+        }
+        
+        /* Wavy text animation */
+        .wavy-container {
+            
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .wavy {
+            display: inline-block;
+        }
+        .wavy span {
+            display: inline-block;
+            animation: wave 2s ease-in-out infinite;
+            animation-delay: calc(.1s * var(--i));
+        }
+        @keyframes wave {
+            0%, 40%, 100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <main class="content container py-4">
+        <div class="wavy-container">
+            <h1 class="wavy" style="font-size: 70px;">
+                <span style="--i:1">M</span>
+                <span style="--i:2">y</span>
+                <span style="--i:3"> </span>
+                <span style="--i:4">P</span>
+                <span style="--i:5">r</span>
+                <span style="--i:6">o</span>
+                <span style="--i:7">j</span>
+                <span style="--i:8">e</span>
+                <span style="--i:9">c</span>
+                <span style="--i:10">t</span>
+                <span style="--i:11">s</span>
+            </h1>
+        </div>
+        
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-6 col-lg-4" style="padding-top: 5%;">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Space Shooter Game</h5>
+                        <p class="card-text">Developed a 2D space shooter game using Python and OOP principles. Gained hands-on experience with game physics and animation.</p>
+                        <p class="text-muted"><small>Technologies: Python, Pygame</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="col-md-6 col-lg-4" style="padding-top: 5%;">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Rain Prediction Classifier</h5>
+                        <p class="card-text">Implemented a weather-based classifier using the k-NN algorithm. Extracted and preprocessed features like temperature and humidity.</p>
+                        <p class="text-muted"><small>Technologies: Python, scikit-learn</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="col-md-6 col-lg-4" style="padding-top: 5%;">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Mango Leaf Disease Detection</h5>
+                        <p class="card-text">Built a convolutional neural network to classify healthy and diseased mango leaves. Achieved accurate classification across 8 classes.</p>
+                        <p class="text-muted"><small>Technologies: Python, TensorFlow</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="col-md-6 col-lg-4" style="padding-top: 10%;">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Line Following Robot</h5>
+                        <p class="card-text">Designed a hardware-based robot capable of following lines using infrared sensors.</p>
+                        <p class="text-muted"><small>Technologies: Arduino, C++</small></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="col-md-6 col-lg-4" style="padding-top: 10%;;">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">University Management Database</h5>
+                        <p class="card-text">Developed a relational database system to manage university records and operations.</p>
+                        <p class="text-muted"><small>Technologies: SQL, MySQL</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
